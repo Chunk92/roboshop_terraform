@@ -26,7 +26,7 @@ output "map" {
   value = var.map.name
 }
 
-variable "map in map" {
+variable "map_in_map" {
   default = {
     user1 = {
       name = "Hello World"
