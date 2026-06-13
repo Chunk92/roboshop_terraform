@@ -23,5 +23,5 @@ variable "map" {
 }
 
 output "map" {
-  value = var.map["name"]
+  value = var.map.age
 }
