@@ -25,3 +25,20 @@ variable "map" {
 output "map" {
   value = var.map.name
 }
+
+variable "map in map" {
+  default = {
+    user1 = {
+      name = "Hello World"
+      age = 30
+    }
+    user2 = {
+      name = "Hello World 2"
+      age = 40
+    }
+    user3 = {
+      name = "Hello World 3"
+      age = 50
+    }
+    }
+}
