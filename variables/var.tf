@@ -13,3 +13,11 @@ variable "list" {
 output "list" {
   value = var.list[0]
 }
+
+variable "map" {
+  default = {
+    name = "Hello World"
+    age = 30
+    email = "hello@world.com"
+  }
+}
