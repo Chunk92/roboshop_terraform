@@ -21,3 +21,7 @@ variable "map" {
     email = "hello@world.com"
   }
 }
+
+output "map" {
+  value = var.map["name"]
+}
