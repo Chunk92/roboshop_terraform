@@ -4,5 +4,5 @@ data "aws_ami_ids" "ami" {
 }
 
 output "ami_ids" {
-  value = data.aws_ami_ids.ami.ids
+  value = data.aws_ami_ids.ami
 }
