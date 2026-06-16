@@ -8,6 +8,10 @@ output "ami_ids" {
 }
 
 resource "aws_instance" "fuckyou" {
-    ami = data.aws_ami_ids.ami.id
-    instance_type = "t3.micro"
+    ami = "ami-0b4f379183e5706b9"
+    instance_type = var.instancy_type 
+}
+
+variable "instancy_type" {
+  
 }
